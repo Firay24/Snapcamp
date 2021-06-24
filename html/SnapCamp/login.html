@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        body {
+            background-color: #383b40ff;
+            font-family: Century Gothic;
+        }
+        
+        #card-1 {
+            width: 68vw;
+            height: 87vh;
+        }
+        
+        #form1 {
+            width: 300px;
+        }
+        
+        #form2 {
+            width: 300px;
+            margin-top: 10px;
+        }
+        
+        #button1 {
+            background-color: white;
+            width: 300px;
+            border-radius: 13px;
+            border-color: black;
+            font-size: 12px;
+        }
+        
+        #button2 {
+            background-color: #395185ff;
+            color: white;
+            width: 300px;
+            font-size: 12px;
+            border-radius: 13px;
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand ml-lg-5" href="#">
+                <!-- <img src="asset/hitam atas.svg"> -->
+                <img src="asset/brand.png" alt="" width="150" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: black;">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" style="font-weight: bold;">
+                    <li class="nav-item active">
+                        <a class="nav-link px-5 mr-3" id="text-link" href="#">BERANDA <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item" id="text-inactive">
+                        <a class="nav-link px-5 mr-3 text-link " href="#">TENTANG</a>
+                    </li>
+                    <li class="nav-item" id="text-inactive">
+                        <a class="nav-link px-5 mr-3 text-link" href="#">HUBUNGI KAMI</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </section>
+    <div class="d-flex justify-content-center mt-5 mb-5">
+        <div class="card" id="card-1">
+            <div class="card-block">
+                <div class="row">
+                    <div class="col-lg-6 tags p-b-2" style=" border-right: 1px solid #333;">
+                        <h5 class="mt-5 text-center" style="font-weight: bold; color:#383b40ff">WELCOME TO LOGIN FORM</h5>
+                        <div class="d-flex justify-content-center">
+                            <img src="asset/Frame.png" width="300px" style="margin-top: 20px;">
+                        </div>
+                        <img style="margin-top: 3px;" src="asset/Vector 1.png" width="434px">
+                    </div>
+                    <div class="col-lg-6 tags p-b-2" style=" border-right: 1px solid #333;">
+                        <div class="row justify-content-md-center mt-5">
+                            <button id=button1 class="btn mt-4"><img class="mb-1" src="asset/google.png" width="20px"> Masuk Dengan Google</button>
+                            <button id=button2 class="btn mt-3"><img class="mb-1" src="asset/logos_facebook.png" width="22px">  Masuk Dengan Facebook</button>
+                            <p class="text-center mt-2" style="font-size: 12px;">Atau</p>
+                            <form class="row justify-content-md-center" action="">
+                                <div class="form-floating text-center mt-2" id="form1">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Username</label>
+                                </div>
+                                <div class="form-floating text-center mt-2" id="form1">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Password</label>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <button class="btn btn-success text-dark" style="width: 120px; font-weight:bold; border-radius:15px;">Masuk</button>
+                                </div>
+                            </form>
+                            <div class="text-center mt-4">
+                                <p>Belum Punya Akun? <a href=""> Daftar</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
