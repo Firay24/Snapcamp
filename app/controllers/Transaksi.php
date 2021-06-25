@@ -3,8 +3,10 @@
 class Transaksi extends Controller{
     public function index()
     {
-        $this->view('templates/header');
-        $this->view('transaksi/index');
+        $data['judul'] = 'Transaksi';
+        $data['kelas'] = $this->model('transaksi_model')->tampil();
+        $this->view('templates/header', $data);
+        $this->view('transaksi/index', $data);
         $this->view('templates/footer');
     }
     public function pembayaran()

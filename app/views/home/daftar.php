@@ -50,44 +50,44 @@
                             <p class="text-center mt-2" style="font-size: 12px;">Atau</p>
                             <form method="POST" class="row justify-content-md-center mb-5" action="<?= BASEURL; ?>/Home/daftar/proses-daftar" id="form-pendaftaran">
                                 <div class="form-floating text-center" id="form1">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Nama</label>
+                                    <input type="text" class="form-control" id="nama" name="nama" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <label class="ml-3 align-baseline" style="font-size: 12px;" for="nama">Masukkan Nama</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <label class="ml-3 align-baseline" style="font-size: 12px;" for="email">Masukkan Email</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Username</label>
+                                    <input type="text" class="form-control" id="username" name="username" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <label class="ml-3 align-baseline" style="font-size: 12px;" for="username">Masukkan Username</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <label class="ml-3 align-baseline" style="font-size: 12px;" for="password">Masukkan Password</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Tempat Lahir</label>
+                                    <input type="text" class="form-control" id="tempatLahir" name="tempatLahir" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <label class="ml-3 align-baseline" style="font-size: 12px;" for="tempatLahir">Masukkan Tempat Lahir</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Tanggal Lahir</label>
+                                    <input type="text" class="form-control" id="tanggalLahir" name="tanggalLahir" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <label class="ml-3 align-baseline" style="font-size: 12px;" for="tanggalLahir">Masukkan Tanggal Lahir</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Jenis Kelamin</label>
+                                    <input type="text" class="form-control" id="jenisKelamin" name="jenisKelamin" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <label class="ml-3 align-baseline" style="font-size: 12px;" for="jenisKelamin">Masukkan Jenis Kelamin</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan No Telepon</label>
+                                    <input type="text" class="form-control" id="noHP" name="noHP" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <label class="ml-3 align-baseline" style="font-size: 12px;" for="noHP">Masukkan No Telepon</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Alamat</label>
+                                    <input type="text" class="form-control" id="alamat" name="alamat" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="alamat">Masukkan Alamat</label>
                                 </div>
 
                                 <div class="text-center mt-3">
-                                    <a href="<?= BASEURL; ?>/Home"><button type="button" class="btn btn-success text-dark" style="width: 120px; font-weight:bold; border-radius:15px;">Daftar</button></a>
+                                    <a><button type="submit" class="btn btn-success text-dark" style="width: 120px; font-weight:bold; border-radius:15px;">Daftar</button></a>
                                     
                                 </div>
                             </form>
