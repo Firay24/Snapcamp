@@ -22,33 +22,26 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>Platform</th>
-                                <th>Class</th>
-                                <th>Price</th>
-                                <th>Datetime</th>
+                                <th>Kelas</th>
+                                <th>Waktu</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
-                                <tr>
-                                    <td>DQlab</td>
-                                    <td>Belajar Data Science</td>
-                                    <td>300000</td>
-                                    <td>12-09-2021</td>
-                                    <td>
-                                        <a class="btn btn-success btn-sm" href="" role="button" >Lunas</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>SanberCode</td>
-                                    <td>Introduction to Python</td>
-                                    <td>250000</td>
-                                    <td>25-12-2021</td>
-                                    <td>
-                                        <a class="btn btn-warning btn-sm" href="<?= BASEURL; ?>/transaksi/informasi" role="button">Bayar</a>
-                                        <a class="btn btn-danger btn-sm" href="" role="button">Hapus</a>
-                                    </td>
-                                </tr>
+                            <?php foreach($data['kelas'] as $kelas) : ?>
+                                    <tr>
+                                        <td><?= $kelas['kelas']; ?></td>
+                                        <td><?= $kelas['waktu']; ?></td>
+                                        <?php if($kelas['keterangan']=='Bayar') :?>
+                                            <td>
+                                                <a class="btn btn-warning btn-sm" href="<?= BASEURL; ?>/transaction/pay/<?= $kelas['id_transaksi']; ?>" role="button" onclick="return confirm('yakin?');"><?= $class['Keterangan']; ?></a>
+                                                <a class="btn btn-danger btn-sm" href="<?= BASEURL; ?>/transaction/delete/<?= $kelas['id_transaksi']; ?>" role="button" onclick="return confirm('yakin?');">Hapus</a>
+                                            </td>
+                                        <?php else: ?>
+                                            <td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#ModalLunas"><?= $class['Keterangan']; ?></button></td>
+                                        <?php endif ?>
+                                    </tr>
+                            <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>
