@@ -8,4 +8,9 @@ class Kelas_saya extends Controller{
         $this->view('templates/header', $data);
         $this->view('kelas_saya/index', $data);
     }
+    public function belajar()
+    {
+        $this->view('templates/header');
+        $this->view('kelas_saya/belajar');
+    }
 }

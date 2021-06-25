@@ -23,7 +23,7 @@
                                 <div class="fw-bold"><?= $kelas['mitra'] ?></div>
                                 <h5><?= $kelas['kelas']; ?></h5>
                             </div>
-                            <span ><a href="" class="btn btn-success">Mulai Belajar</a></span>
+                            <span ><a href="<?= BASEURL; ?>/kelas_saya/belajar" class="btn btn-success">Mulai Belajar</a></span>
                         </li>
                     <?php endforeach; ?>
                 </ol>
