@@ -41,17 +41,22 @@
                             <button id=button1 class="btn mt-4"><img class="mb-1" src="<?= BASEURL; ?>/img/google.png" width="20px"> Masuk Dengan Google</button>
                             <button id=button2 class="btn mt-3"><img class="mb-1" src="<?= BASEURL; ?>/img/logos_facebook.png" width="22px">  Masuk Dengan Facebook</button>
                             <p class="text-center mt-2" style="font-size: 12px;">Atau</p>
-                            <form class="row justify-content-md-center" action="">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <?php Flasher::flash();?>
+                                </div>
+                            </div>
+                            <form class="row justify-content-md-center" action="<?= BASEURL; ?>/login/proses_masuk" method="POST">
                                 <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <input type="text" class="form-control" id="username" name="username" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
                                     <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Username</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <input type="password" class="form-control" id="password" name="password" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
                                     <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Password</label>
                                 </div>
                                 <div class="text-center mt-3">
-                                <a href="<?= BASEURL; ?>/dashboard"><button type="button" class="btn btn-success text-dark" style="width: 120px; font-weight:bold; border-radius:15px;">Masuk</button></a>
+                                <a href=""><button type="submit" class="btn btn-success text-dark" style="width: 120px; font-weight:bold; border-radius:15px;">Masuk</button></a>
                                     
                                 </div>
                             </form>

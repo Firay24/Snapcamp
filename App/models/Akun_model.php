@@ -8,6 +8,14 @@ class Akun_model{
     {
         $this->db = new Database;
     }
+
+    public function getCredential($username)
+    {
+        $this->db->query("SELECT * FROM pelanggan WHERE username=:username");
+        $this->db->bind('username', $username);
+        return $this->db->single()
+;    }
+
     public function addAkun($data)
     {
         $query = "INSERT INTO pelanggan (nama, username, password, email, jenisKelamin, tempatLahir, tanggalLahir, alamat, noHP) VALUES (:nama, :username, :password, :email, :jenisKelamin, :tempatLahir, :tanggalLahir, :alamat, :noHP)";
