@@ -34,11 +34,11 @@
                                         <td><?= $kelas['waktu']; ?></td>
                                         <?php if($kelas['keterangan']=='Bayar') :?>
                                             <td>
-                                                <a class="btn btn-warning btn-sm" href="<?= BASEURL; ?>/transaction/pay/<?= $kelas['id_transaksi']; ?>" role="button" onclick="return confirm('yakin?');"><?= $class['Keterangan']; ?></a>
-                                                <a class="btn btn-danger btn-sm" href="<?= BASEURL; ?>/transaction/delete/<?= $kelas['id_transaksi']; ?>" role="button" onclick="return confirm('yakin?');">Hapus</a>
+                                                <a class="btn btn-warning btn-sm" href="" role="button" onclick="return confirm('yakin?');"><?= $kelas['keterangan']; ?></a>
+                                                <a class="btn btn-danger btn-sm" href="" role="button" onclick="return confirm('yakin?');">Hapus</a>
                                             </td>
                                         <?php else: ?>
-                                            <td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#ModalLunas"><?= $class['Keterangan']; ?></button></td>
+                                            <td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#ModalLunas"><?= $kelas['keterangan']; ?></button></td>
                                         <?php endif ?>
                                     </tr>
                             <?php endforeach; ?>

@@ -17,20 +17,15 @@
         <div class="card-body">
             <div>
                 <ol class="list-group list-group-numbered">
+                    <?php foreach($data['kelas'] as $kelas) : ?>
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
-                                <div class="fw-bold">Sanbercode</div>
-                                <h5>Python - Data Science</h5>
+                                <div class="fw-bold"><?= $kelas['mitra'] ?></div>
+                                <h5><?= $kelas['kelas']; ?></h5>
                             </div>
                             <span ><a href="" class="btn btn-success">Mulai Belajar</a></span>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
-                            <div class="ms-2 me-auto">
-                                <div class="fw-bold">Sanbercode</div>
-                                <h5>Belajar PHP Dasar</h5>
-                            </div>
-                            <span ><a href="" class="btn btn-success">Mulai Belajar</a></span>
-                        </li>
+                    <?php endforeach; ?>
                 </ol>
             </div>
         </div>

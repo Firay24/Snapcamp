@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SnapCamp</title>
+    <title><?= $data['judul']; ?></title>
     <link rel="icon" type="image/png" href="<?= BASEURL; ?>/img/icon.jpg">
 
     <!-- Custom fonts for this template-->
