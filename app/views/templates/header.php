@@ -84,12 +84,21 @@
             <?php endif; ?>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link" href="#">
+            <?php if($_GET['url'] == "profil"): ?>
+            <li class="nav-item active">
+                <a class="nav-link" href="<?= BASEURL; ?>/profil">
                     <i class="fas fa-user"></i>
                     <span>PROFIL</span>
                 </a>
             </li>
+            <?php else: ?>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= BASEURL; ?>/profil">
+                    <i class="fas fa-user"></i>
+                    <span>PROFIL</span>
+                </a>
+            </li>
+            <?php endif; ?>
             <?php if($_GET['url'] == "transaksi"): ?>
             <li class="nav-item active">
                 <a class="nav-link" href="<?= BASEURL; ?>/transaksi">
@@ -112,7 +121,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="<?= BASEURL; ?>/home">
                     <i class="fas fa-sign-out-alt"></i>
                     <span>KELUAR</span>
                 </a>

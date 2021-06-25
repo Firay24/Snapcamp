@@ -39,8 +39,8 @@
         <p>Hadir untuk Anda sebagai platform yang menyediakan kursus atau pelatihan dalam berbagai bidang. Selain itu, Anda bisa mendapatkan sertifikat pelatihan juga loh ! Ayo buruan daftar sekarang juga dan pilih bidang yang ingin Anda tekuni</p>
     </div>
     <div id="button_home" class="">
-        <a href="<?= BASEURL; ?>/Home/login"><button id="button1" type="button" class="btn">MASUK</button></a>
-        <a href="<?= BASEURL; ?>/Home/daftar"><button id="button2" type="button" class="btn ml-5">DAFTAR</button></a>
+        <a href="<?= BASEURL; ?>/login"><button id="button1" type="button" class="btn">MASUK</button></a>
+        <a href="<?= BASEURL; ?>/daftar"><button id="button2" type="button" class="btn ml-5">DAFTAR</button></a>
     </div>
     <!-- <div class="b">
     </div> -->

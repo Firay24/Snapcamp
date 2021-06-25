@@ -22,14 +22,14 @@
                                 <div class="fw-bold">Sanbercode</div>
                                 <h5>Python - Data Science</h5>
                             </div>
-                            <span ><a href="" class="btn btn-success">Mulai Belajar</a></span>
+                            <span ><a href="<?= BASEURL; ?>/kelas_saya/belajar" class="btn btn-success">Mulai Belajar</a></span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold">Sanbercode</div>
                                 <h5>Belajar PHP Dasar</h5>
                             </div>
-                            <span ><a href="" class="btn btn-success">Mulai Belajar</a></span>
+                            <span ><a href="<?= BASEURL; ?>/kelas_saya/belajar" class="btn btn-success">Mulai Belajar</a></span>
                         </li>
                 </ol>
             </div>
