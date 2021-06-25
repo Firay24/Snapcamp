@@ -1,4 +1,5 @@
 <body>
+    <!-- header -->
     <section id="header">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand ml-lg-5" href="#">
@@ -24,6 +25,8 @@
             </div>
 
         </nav>
+
+    <!-- form pendaftaran -->
     </section>
     <div class="d-flex justify-content-center mt-5 mb-5">
         <div class="card" id="card-1" style="height: 115.5vh;">
@@ -45,7 +48,7 @@
                             <button id=button1 class="btn mt-3"><img class="mb-1" src="<?= BASEURL; ?>/img/google.png" width="20px">  Masuk Dengan Google</button>
                             <button id=button2 class="btn mt-3"><img class="mb-1" src="<?= BASEURL; ?>/img/logos_facebook.png" width="22px">  Masuk Dengan Facebook</button>
                             <p class="text-center mt-2" style="font-size: 12px;">Atau</p>
-                            <form class="row justify-content-md-center mb-5" action="">
+                            <form method="POST" class="row justify-content-md-center mb-5" action="<?= BASEURL; ?>/Home/daftar/proses-daftar" id="form-pendaftaran">
                                 <div class="form-floating text-center" id="form1">
                                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
                                     <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Nama</label>
