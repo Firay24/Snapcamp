@@ -56,7 +56,7 @@
                                 </div>
                             </form>
                             <div class="text-center mt-4">
-                                <p>Belum Punya Akun? <a href="<?= BASEURL; ?>/Home/daftar"> Daftar</a></p>
+                                <p>Belum Punya Akun? <a href="<?= BASEURL; ?>/daftar"> Daftar</a></p>
                             </div>
                         </div>
                     </div>

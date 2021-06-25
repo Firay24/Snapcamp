@@ -51,10 +51,6 @@
                                     <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Nama</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Email</label>
-                                </div>
-                                <div class="form-floating text-center mt-2" id="form1">
                                     <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
                                     <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Username</label>
                                 </div>
@@ -62,30 +58,8 @@
                                     <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
                                     <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Password</label>
                                 </div>
-                                <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Tempat Lahir</label>
-                                </div>
-                                <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Tanggal Lahir</label>
-                                </div>
-                                <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan No KTP</label>
-                                </div>
-                                <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan No Telepon</label>
-                                </div>
-                                <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Alamat</label>
-                                </div>
-
                                 <div class="text-center mt-3">
                                     <a href="<?= BASEURL; ?>/Home"><button type="button" class="btn btn-success text-dark" style="width: 120px; font-weight:bold; border-radius:15px;">Daftar</button></a>
-                                    
                                 </div>
                             </form>
                         </div>
