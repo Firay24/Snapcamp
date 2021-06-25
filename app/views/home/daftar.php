@@ -67,12 +67,12 @@
                                     <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Tempat Lahir</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
                                     <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Tanggal Lahir</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
                                     <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
-                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan No KTP</label>
+                                    <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Jenis Kelamin</label>
                                 </div>
                                 <div class="form-floating text-center mt-2" id="form1">
                                     <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
