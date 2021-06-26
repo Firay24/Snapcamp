@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 25 Jun 2021 pada 12.15
+-- Waktu pembuatan: 26 Jun 2021 pada 04.50
 -- Versi server: 10.4.17-MariaDB
 -- Versi PHP: 7.4.13
 
@@ -52,22 +52,16 @@ CREATE TABLE `pelanggan` (
   `id_Pelanggan` int(5) NOT NULL,
   `nama` varchar(30) NOT NULL,
   `username` varchar(20) NOT NULL,
-  `password` varchar(20) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `jenisKelamin` enum('Perempuan','Laki-laki') NOT NULL,
-  `tempatLahir` varchar(30) NOT NULL,
-  `tanggalLahir` date NOT NULL,
-  `alamat` varchar(40) NOT NULL,
-  `noHP` varchar(16) NOT NULL
+  `password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `pelanggan`
 --
 
-INSERT INTO `pelanggan` (`id_Pelanggan`, `nama`, `username`, `password`, `email`, `jenisKelamin`, `tempatLahir`, `tanggalLahir`, `alamat`, `noHP`) VALUES
-(1, 'Fira Yusi', 'firay24', 'midorima', 'fisan.onodaconan@gmail.com', 'Perempuan', 'Banyuwangi', '2001-10-09', 'Banyuwangi', '085231796284'),
-(2, 'Putri Regita', 'regitas', 'regitas', 'putri.regita@gmail.com', 'Perempuan', 'Banyuwangi', '2001-10-11', 'Banyuwangi', '085231796222');
+INSERT INTO `pelanggan` (`id_Pelanggan`, `nama`, `username`, `password`) VALUES
+(1, 'Fira Yusi', 'firay24', 'midorima'),
+(2, 'Putri Regita', 'regitas', 'regitas');
 
 -- --------------------------------------------------------
 
@@ -88,7 +82,8 @@ CREATE TABLE `transaksi` (
 --
 
 INSERT INTO `transaksi` (`id_transaksi`, `id_pelanggan`, `id_kelas`, `waktu`, `keterangan`) VALUES
-(1, 1, 1, '2021-06-25 15:26:25.000000', 'Bayar');
+(1, 1, 1, '2021-06-25 15:26:25.000000', 'Bayar'),
+(2, 2, 2, '2021-06-25 22:55:05.000000', 'Lunas');
 
 --
 -- Indexes for dumped tables
@@ -134,7 +129,7 @@ ALTER TABLE `pelanggan`
 -- AUTO_INCREMENT untuk tabel `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_transaksi` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_transaksi` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
