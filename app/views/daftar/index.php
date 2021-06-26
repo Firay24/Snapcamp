@@ -26,15 +26,15 @@
         </nav>
     </section>
     <div class="d-flex justify-content-center mt-5 mb-5">
-        <div class="card" id="card-1" style="height: 115.5vh;">
+        <div class="card" id="card-1" style="height: 87vh;">
             <div class="card-block">
                 <div class="row">
                     <div class="col-lg-6 tags p-b-2" style=" border-right: 1px solid #333;">
                         <h5 class="ml-5 mt-5" style="font-weight: bold; color:#383b40ff">WELCOME TO REGISTRATION FORM</h5>
                         <div class="d-flex justify-content-center flex-column">
-                            <img class="align-items-center mb-5 ml-5" src="<?= BASEURL; ?>/img/Frame.png" width="300px" style="margin-top: 100px;">
+                            <img class="align-items-center  ml-5" src="<?= BASEURL; ?>/img/Frame.png" width="300px" style="margin-top: 20px;">
                             <div class="align-text-bottom">
-                                <img class="Card-img-bottom mt-5" src="<?= BASEURL; ?>/img/Vector 1.png" width="434px">
+                                <img class="Card-img-bottom mt-3" src="<?= BASEURL; ?>/img/Vector 1.png" width="434px">
                             </div>
                         </div>
                         <div class="d-flex flex-column">
