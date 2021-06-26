@@ -24,6 +24,7 @@
                             <tr>
                                 <th>Kelas</th>
                                 <th>Waktu</th>
+                                <th>Harga</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
@@ -32,6 +33,7 @@
                                     <tr>
                                         <td><?= $kelas['kelas']; ?></td>
                                         <td><?= $kelas['waktu']; ?></td>
+                                        <td><?= $kelas['harga']; ?></td>
                                         <?php if($kelas['keterangan']=='Bayar') :?>
                                             <td>
                                                 <a class="btn btn-warning btn-sm" href="" role="button" onclick="return confirm('yakin?');"><?= $kelas['keterangan']; ?></a>

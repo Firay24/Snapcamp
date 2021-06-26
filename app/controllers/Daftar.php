@@ -2,7 +2,8 @@
 class Daftar extends Controller{
     public function index()
     {
-        $this->view('templates/header-user');
+        $data['judul'] = 'Daftar';
+        $this->view('templates/header-user',$data);
         $this->view('daftar/index');
         $this->view('templates/footer-home');
     }
