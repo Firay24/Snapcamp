@@ -3,7 +3,14 @@
 class Dashboard extends Controller{
     public function index()
     {
-        $this->view('templates/header');
-        $this->view('dashboard/index');
+        if ( !isset($_POST['username']) || !isset($_POST['password']))
+        {
+            header("Location: " . BASEURL . "/home");
+        } else 
+        {
+            $data['judul'] = 'Dashboard';
+            $this->view('templates/header',$data);
+            $this->view('dashboard/index');
+        }
     }
 }

@@ -7,7 +7,7 @@ class Daftar extends Controller{
         $this->view('daftar/index');
         $this->view('templates/footer-home');
     }
-    
+
     public function proses_daftar()
     {
         if ($_POST['password'] != $_POST['konfirm'])
@@ -20,7 +20,7 @@ class Daftar extends Controller{
         if( $this->model('Akun_model')->addAkun($_POST) > 0)
         {
             Flasher::setFlash('Daftar', 'Berhasil', 'success');
-            header("Location: " . BASEURL . "/login/index");
+            header("Location: " . BASEURL . "/Login/index");
             exit;
         }
     }
