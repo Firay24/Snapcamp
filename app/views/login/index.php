@@ -46,7 +46,7 @@
                                     <?php Flasher::flash();?>
                                 </div>
                             </div>
-                            <form class="row justify-content-md-center" action="<?= BASEURL; ?>/login/proses_masuk" method="POST">
+                            <form class="row justify-content-md-center" action="<?= BASEURL; ?>/login/proses_masuk" method="post">
                                 <div class="form-floating text-center mt-2" id="form1">
                                     <input type="text" class="form-control" id="username" name="username" style="font-size:15px; font-weight: normal; height:45px; border-radius:15px;">
                                     <label class="ml-3 align-baseline" style="font-size: 12px;" id="label1">Masukkan Username</label>

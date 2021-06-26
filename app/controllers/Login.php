@@ -18,7 +18,7 @@ class Login extends Controller{
         if ($credential['password'] == $data['password'])
         {
             $_SESSION['username'] == $data ['username'];
-            header("Location: " . BASEURL . "/dashboard");
+            header("Location: " . BASEURL . "/dashboard/index");
             exit;
         } else {
             Flasher::setFlash("Masuk", "Gagal", 'danger');

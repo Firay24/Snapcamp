@@ -5,12 +5,7 @@ class Dashboard extends Controller{
     {
         $data['judul'] = 'Dashboard';
         $this->view('templates/header',$data);
-        $this->view('dashboard/index', $data);
-        
-        if ( !isset($_POST['username']) || !isset($_POST['password']))
-        {
-            header("Location: " . BASEURL . "/home");
-            exit;
-        } 
+        $this->view('dashboard/index');
+    
     }
 }
