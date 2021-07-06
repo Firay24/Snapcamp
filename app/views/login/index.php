@@ -26,15 +26,15 @@
         </nav>
     </section>
     <div class="d-flex justify-content-center mt-5 mb-5">
-        <div class="card" id="card-1" style="height: 87vh;">
+        <div class="card" id="card-1">
             <div class="card-block">
                 <div class="row">
                     <div class="col-lg-6 tags p-b-2" style=" border-right: 1px solid #333;">
                         <h5 class="mt-5 text-center" style="font-weight: bold; color:#383b40ff">WELCOME TO LOGIN FORM</h5>
                         <div class="d-flex justify-content-center">
-                            <img src="<?= BASEURL; ?>/img/Frame.png" width="300px" style="margin-top: 20px;">
+                            <img class="mb-5 pb-5" src="<?= BASEURL; ?>/img/Frame.png" width="300px" style="margin-top: 20px;">
+                            <img src="<?= BASEURL; ?>/img/Vector 1.png" width="450px" style="bottom: -1px; right: -1px; position:absolute;">
                         </div>
-                        <img class="Card-img-bottom mt-1" src="<?= BASEURL; ?>/img/Vector 1.png" width="434px">
                     </div>
                     <div class="col-lg-6 tags p-b-2" style=" border-right: 1px solid #333;">
                         <div class="row justify-content-md-center mt-5">

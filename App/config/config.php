@@ -1,6 +1,6 @@
 <?php 
 
-define('BASEURL', 'http://localhost:7882/Snapcamp/public');
+define('BASEURL', 'http://localhost/Snapcamp/public');
 
 //DATABASE
 define('DB_HOST', 'localhost');

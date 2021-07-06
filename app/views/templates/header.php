@@ -114,12 +114,22 @@
                 </a>
             </li>
             <?php endif; ?>
+            <?php if($_GET['url'] == "sertifikat"): ?>
+            <li class="nav-item active">
+                <a class="nav-link" href="<?= BASEURL; ?>/sertifikat">
+                    <i class="fas fa-file-certificate"></i>
+                    <span>SERTIFIKAT</span>
+                </a>
+            </li>
+            <?php else: ?>
             <li class="nav-item">
                 <a class="nav-link" href="<?= BASEURL; ?>/sertifikat">
                     <i class="fas fa-file-certificate"></i>
                     <span>SERTIFIKAT</span>
                 </a>
             </li>
+            <?php endif; ?>
+        
             <li class="nav-item">
                 <a class="nav-link" href="<?= BASEURL; ?>/home">
                     <i class="fas fa-sign-out-alt"></i>
